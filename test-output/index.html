@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-passed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">19 methods,   19 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.openLib.RestAssured.Assignment_Restassured" hash-for-method="callbackOpenLib">callbackOpenLib</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.openLib.RestAssured.Assignment_Restassured" hash-for-method="checkNumberofauthors">checkNumberofauthors</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.openLib.RestAssured.Assignment_Restassured" hash-for-method="checkResponseCodeForCorrectRequest">checkResponseCodeForCorrectRequest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.openLib.RestAssured.Assignment_Restassured" hash-for-method="checkResponseCodeForIncorrectRequest">checkResponseCodeForIncorrectRequest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.openLib.RestAssured.Assignment_Restassured" hash-for-method="checkResponseContectTypeRDF">checkResponseContectTypeRDF</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.openLib.RestAssured.Assignment_Restassured" hash-for-method="checkResponseContentTypeJson">checkResponseContentTypeJson</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.openLib.RestAssured.Assignment_Restassured" hash-for-method="checkSizeofentriesResponse">checkSizeofentriesResponse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.openLib.RestAssured.Assignment_Restassured" hash-for-method="checkTheSecondCommentOf2014WasAtAlbertPark">checkTheSecondCommentOf2014WasAtAlbertPark</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.openLib.RestAssured.Assignment_Restassured" hash-for-method="checkTheaurthor">checkTheaurthor</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.openLib.RestAssured.Assignment_Restassured" hash-for-method="checkauthours">checkauthours</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.openLib.RestAssured.Assignment_Restassured" hash-for-method="cookiesSupportEqualCharacterInCookieValue">cookiesSupportEqualCharacterInCookieValue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.openLib.RestAssured.Assignment_Restassured" hash-for-method="getRdfAndCheck">getRdfAndCheck</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.openLib.RestAssured.Assignment_Restassured" hash-for-method="retrieveOAuthToken">retrieveOAuthToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.openLib.RestAssured.Assignment_Restassured" hash-for-method="retriveTitleandValidatefromResponse">retriveTitleandValidatefromResponse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.openLib.RestAssured.Assignment_Restassured" hash-for-method="useBasicAuthentication">useBasicAuthentication</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.openLib.RestAssured.Assignment_Restassured" hash-for-method="useMultiplePathParameters">useMultiplePathParameters</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.openLib.RestAssured.Assignment_Restassured" hash-for-method="useSinglePathParameter">useSinglePathParameter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.openLib.RestAssured.Assignment_Restassured" hash-for-method="validatenotes">validatenotes</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.openLib.RestAssured.Assignment_Restassured" hash-for-method="whenExpectationsDefinedThenAsStringReturnsCanReturnTheResponseBody">whenExpectationsDefinedThenAsStringReturnsCanReturnTheResponseBody</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.openLib.RestAssured.Assignment_Restassured</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="callbackOpenLib">
+                  </a> <!-- callbackOpenLib -->
+                  <span class="method-name">callbackOpenLib</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkNumberofauthors">
+                  </a> <!-- checkNumberofauthors -->
+                  <span class="method-name">checkNumberofauthors</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkResponseCodeForCorrectRequest">
+                  </a> <!-- checkResponseCodeForCorrectRequest -->
+                  <span class="method-name">checkResponseCodeForCorrectRequest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkResponseCodeForIncorrectRequest">
+                  </a> <!-- checkResponseCodeForIncorrectRequest -->
+                  <span class="method-name">checkResponseCodeForIncorrectRequest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkResponseContectTypeRDF">
+                  </a> <!-- checkResponseContectTypeRDF -->
+                  <span class="method-name">checkResponseContectTypeRDF</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkResponseContentTypeJson">
+                  </a> <!-- checkResponseContentTypeJson -->
+                  <span class="method-name">checkResponseContentTypeJson</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkSizeofentriesResponse">
+                  </a> <!-- checkSizeofentriesResponse -->
+                  <span class="method-name">checkSizeofentriesResponse</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkTheSecondCommentOf2014WasAtAlbertPark">
+                  </a> <!-- checkTheSecondCommentOf2014WasAtAlbertPark -->
+                  <span class="method-name">checkTheSecondCommentOf2014WasAtAlbertPark</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkTheaurthor">
+                  </a> <!-- checkTheaurthor -->
+                  <span class="method-name">checkTheaurthor</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkauthours">
+                  </a> <!-- checkauthours -->
+                  <span class="method-name">checkauthours</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="cookiesSupportEqualCharacterInCookieValue">
+                  </a> <!-- cookiesSupportEqualCharacterInCookieValue -->
+                  <span class="method-name">cookiesSupportEqualCharacterInCookieValue</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getRdfAndCheck">
+                  </a> <!-- getRdfAndCheck -->
+                  <span class="method-name">getRdfAndCheck</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="retrieveOAuthToken">
+                  </a> <!-- retrieveOAuthToken -->
+                  <span class="method-name">retrieveOAuthToken</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="retriveTitleandValidatefromResponse">
+                  </a> <!-- retriveTitleandValidatefromResponse -->
+                  <span class="method-name">retriveTitleandValidatefromResponse</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="useBasicAuthentication">
+                  </a> <!-- useBasicAuthentication -->
+                  <span class="method-name">useBasicAuthentication</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="useMultiplePathParameters">
+                  </a> <!-- useMultiplePathParameters -->
+                  <span class="method-name">useMultiplePathParameters</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="useSinglePathParameter">
+                  </a> <!-- useSinglePathParameter -->
+                  <span class="method-name">useSinglePathParameter</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatenotes">
+                  </a> <!-- validatenotes -->
+                  <span class="method-name">validatenotes</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="whenExpectationsDefinedThenAsStringReturnsCanReturnTheResponseBody">
+                  </a> <!-- whenExpectationsDefinedThenAsStringReturnsCanReturnTheResponseBody -->
+                  <span class="method-name">whenExpectationsDefinedThenAsStringReturnsCanReturnTheResponseBody</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/kmekala/Documents/workspace/SkillSoftAssignment/src/test/resources/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;test name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.openLib.RestAssured.Assignment_Restassured&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(19);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'retrieveOAuthToken')
+data.setCell(0, 2, 'com.openLib.RestAssured.Assignment_Restassured')
+data.setCell(0, 3, 1589);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'callbackOpenLib')
+data.setCell(1, 2, 'com.openLib.RestAssured.Assignment_Restassured')
+data.setCell(1, 3, 1519);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'checkResponseContectTypeRDF')
+data.setCell(2, 2, 'com.openLib.RestAssured.Assignment_Restassured')
+data.setCell(2, 3, 1032);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'cookiesSupportEqualCharacterInCookieValue')
+data.setCell(3, 2, 'com.openLib.RestAssured.Assignment_Restassured')
+data.setCell(3, 3, 1002);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'getRdfAndCheck')
+data.setCell(4, 2, 'com.openLib.RestAssured.Assignment_Restassured')
+data.setCell(4, 3, 850);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'checkSizeofentriesResponse')
+data.setCell(5, 2, 'com.openLib.RestAssured.Assignment_Restassured')
+data.setCell(5, 3, 839);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'useBasicAuthentication')
+data.setCell(6, 2, 'com.openLib.RestAssured.Assignment_Restassured')
+data.setCell(6, 3, 812);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'retriveTitleandValidatefromResponse')
+data.setCell(7, 2, 'com.openLib.RestAssured.Assignment_Restassured')
+data.setCell(7, 3, 401);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'checkResponseCodeForIncorrectRequest')
+data.setCell(8, 2, 'com.openLib.RestAssured.Assignment_Restassured')
+data.setCell(8, 3, 340);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'checkTheaurthor')
+data.setCell(9, 2, 'com.openLib.RestAssured.Assignment_Restassured')
+data.setCell(9, 3, 294);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'useSinglePathParameter')
+data.setCell(10, 2, 'com.openLib.RestAssured.Assignment_Restassured')
+data.setCell(10, 3, 281);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'validatenotes')
+data.setCell(11, 2, 'com.openLib.RestAssured.Assignment_Restassured')
+data.setCell(11, 3, 279);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'checkauthours')
+data.setCell(12, 2, 'com.openLib.RestAssured.Assignment_Restassured')
+data.setCell(12, 3, 265);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'checkTheSecondCommentOf2014WasAtAlbertPark')
+data.setCell(13, 2, 'com.openLib.RestAssured.Assignment_Restassured')
+data.setCell(13, 3, 262);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'useMultiplePathParameters')
+data.setCell(14, 2, 'com.openLib.RestAssured.Assignment_Restassured')
+data.setCell(14, 3, 255);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'checkResponseCodeForCorrectRequest')
+data.setCell(15, 2, 'com.openLib.RestAssured.Assignment_Restassured')
+data.setCell(15, 3, 247);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'whenExpectationsDefinedThenAsStringReturnsCanReturnTheResponseBody')
+data.setCell(16, 2, 'com.openLib.RestAssured.Assignment_Restassured')
+data.setCell(16, 3, 240);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'checkResponseContentTypeJson')
+data.setCell(17, 2, 'com.openLib.RestAssured.Assignment_Restassured')
+data.setCell(17, 3, 219);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'checkNumberofauthors')
+data.setCell(18, 2, 'com.openLib.RestAssured.Assignment_Restassured')
+data.setCell(18, 3, 6);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.openLib.RestAssured.Assignment_Restassured</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">callbackOpenLib</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkNumberofauthors</span>
+                <span class="method-start">1544 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkResponseCodeForCorrectRequest</span>
+                <span class="method-start">1553 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkResponseCodeForIncorrectRequest</span>
+                <span class="method-start">1802 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkResponseContectTypeRDF</span>
+                <span class="method-start">2149 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkResponseContentTypeJson</span>
+                <span class="method-start">3183 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkSizeofentriesResponse</span>
+                <span class="method-start">3404 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkTheSecondCommentOf2014WasAtAlbertPark</span>
+                <span class="method-start">4245 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkTheaurthor</span>
+                <span class="method-start">4510 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkauthours</span>
+                <span class="method-start">4805 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">cookiesSupportEqualCharacterInCookieValue</span>
+                <span class="method-start">5071 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getRdfAndCheck</span>
+                <span class="method-start">6074 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">retrieveOAuthToken</span>
+                <span class="method-start">6926 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">retriveTitleandValidatefromResponse</span>
+                <span class="method-start">8516 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">useBasicAuthentication</span>
+                <span class="method-start">8919 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">useMultiplePathParameters</span>
+                <span class="method-start">9732 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">useSinglePathParameter</span>
+                <span class="method-start">9989 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validatenotes</span>
+                <span class="method-start">10271 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">whenExpectationsDefinedThenAsStringReturnsCanReturnTheResponseBody</span>
+                <span class="method-start">10551 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">10870 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

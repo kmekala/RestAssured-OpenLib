@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="19" passed="19">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="11320" started-at="2016-08-06T22:54:40Z" finished-at="2016-08-06T22:54:51Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="11320" started-at="2016-08-06T22:54:40Z" finished-at="2016-08-06T22:54:51Z">
+      <class name="com.openLib.RestAssured.Assignment_Restassured">
+        <test-method status="PASS" signature="callbackOpenLib()[pri:0, instance:com.openLib.RestAssured.Assignment_Restassured@3e6fa38a]" name="callbackOpenLib" duration-ms="1519" started-at="2016-08-06T18:54:41Z" finished-at="2016-08-06T18:54:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- callbackOpenLib -->
+        <test-method status="PASS" signature="checkNumberofauthors()[pri:0, instance:com.openLib.RestAssured.Assignment_Restassured@3e6fa38a]" name="checkNumberofauthors" duration-ms="6" started-at="2016-08-06T18:54:42Z" finished-at="2016-08-06T18:54:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkNumberofauthors -->
+        <test-method status="PASS" signature="checkResponseCodeForCorrectRequest()[pri:0, instance:com.openLib.RestAssured.Assignment_Restassured@3e6fa38a]" name="checkResponseCodeForCorrectRequest" duration-ms="247" started-at="2016-08-06T18:54:42Z" finished-at="2016-08-06T18:54:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResponseCodeForCorrectRequest -->
+        <test-method status="PASS" signature="checkResponseCodeForIncorrectRequest()[pri:0, instance:com.openLib.RestAssured.Assignment_Restassured@3e6fa38a]" name="checkResponseCodeForIncorrectRequest" duration-ms="340" started-at="2016-08-06T18:54:42Z" finished-at="2016-08-06T18:54:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResponseCodeForIncorrectRequest -->
+        <test-method status="PASS" signature="checkResponseContectTypeRDF()[pri:0, instance:com.openLib.RestAssured.Assignment_Restassured@3e6fa38a]" name="checkResponseContectTypeRDF" duration-ms="1032" started-at="2016-08-06T18:54:43Z" finished-at="2016-08-06T18:54:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResponseContectTypeRDF -->
+        <test-method status="PASS" signature="checkResponseContentTypeJson()[pri:0, instance:com.openLib.RestAssured.Assignment_Restassured@3e6fa38a]" name="checkResponseContentTypeJson" duration-ms="219" started-at="2016-08-06T18:54:44Z" finished-at="2016-08-06T18:54:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkResponseContentTypeJson -->
+        <test-method status="PASS" signature="checkSizeofentriesResponse()[pri:0, instance:com.openLib.RestAssured.Assignment_Restassured@3e6fa38a]" name="checkSizeofentriesResponse" duration-ms="839" started-at="2016-08-06T18:54:44Z" finished-at="2016-08-06T18:54:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSizeofentriesResponse -->
+        <test-method status="PASS" signature="checkTheSecondCommentOf2014WasAtAlbertPark()[pri:0, instance:com.openLib.RestAssured.Assignment_Restassured@3e6fa38a]" name="checkTheSecondCommentOf2014WasAtAlbertPark" duration-ms="262" started-at="2016-08-06T18:54:45Z" finished-at="2016-08-06T18:54:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTheSecondCommentOf2014WasAtAlbertPark -->
+        <test-method status="PASS" signature="checkTheaurthor()[pri:0, instance:com.openLib.RestAssured.Assignment_Restassured@3e6fa38a]" name="checkTheaurthor" duration-ms="294" started-at="2016-08-06T18:54:45Z" finished-at="2016-08-06T18:54:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTheaurthor -->
+        <test-method status="PASS" signature="checkauthours()[pri:0, instance:com.openLib.RestAssured.Assignment_Restassured@3e6fa38a]" name="checkauthours" duration-ms="265" started-at="2016-08-06T18:54:45Z" finished-at="2016-08-06T18:54:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkauthours -->
+        <test-method status="PASS" signature="cookiesSupportEqualCharacterInCookieValue()[pri:0, instance:com.openLib.RestAssured.Assignment_Restassured@3e6fa38a]" name="cookiesSupportEqualCharacterInCookieValue" duration-ms="1002" started-at="2016-08-06T18:54:46Z" finished-at="2016-08-06T18:54:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cookiesSupportEqualCharacterInCookieValue -->
+        <test-method status="PASS" signature="getRdfAndCheck()[pri:0, instance:com.openLib.RestAssured.Assignment_Restassured@3e6fa38a]" name="getRdfAndCheck" duration-ms="850" started-at="2016-08-06T18:54:47Z" finished-at="2016-08-06T18:54:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRdfAndCheck -->
+        <test-method status="PASS" signature="retrieveOAuthToken()[pri:0, instance:com.openLib.RestAssured.Assignment_Restassured@3e6fa38a]" name="retrieveOAuthToken" duration-ms="1589" started-at="2016-08-06T18:54:48Z" finished-at="2016-08-06T18:54:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- retrieveOAuthToken -->
+        <test-method status="PASS" signature="retriveTitleandValidatefromResponse()[pri:0, instance:com.openLib.RestAssured.Assignment_Restassured@3e6fa38a]" name="retriveTitleandValidatefromResponse" duration-ms="401" started-at="2016-08-06T18:54:49Z" finished-at="2016-08-06T18:54:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- retriveTitleandValidatefromResponse -->
+        <test-method status="PASS" signature="useBasicAuthentication()[pri:0, instance:com.openLib.RestAssured.Assignment_Restassured@3e6fa38a]" name="useBasicAuthentication" duration-ms="812" started-at="2016-08-06T18:54:50Z" finished-at="2016-08-06T18:54:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- useBasicAuthentication -->
+        <test-method status="PASS" signature="useMultiplePathParameters()[pri:0, instance:com.openLib.RestAssured.Assignment_Restassured@3e6fa38a]" name="useMultiplePathParameters" duration-ms="255" started-at="2016-08-06T18:54:50Z" finished-at="2016-08-06T18:54:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- useMultiplePathParameters -->
+        <test-method status="PASS" signature="useSinglePathParameter()[pri:0, instance:com.openLib.RestAssured.Assignment_Restassured@3e6fa38a]" name="useSinglePathParameter" duration-ms="281" started-at="2016-08-06T18:54:51Z" finished-at="2016-08-06T18:54:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- useSinglePathParameter -->
+        <test-method status="PASS" signature="validatenotes()[pri:0, instance:com.openLib.RestAssured.Assignment_Restassured@3e6fa38a]" name="validatenotes" duration-ms="279" started-at="2016-08-06T18:54:51Z" finished-at="2016-08-06T18:54:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatenotes -->
+        <test-method status="PASS" signature="whenExpectationsDefinedThenAsStringReturnsCanReturnTheResponseBody()[pri:0, instance:com.openLib.RestAssured.Assignment_Restassured@3e6fa38a]" name="whenExpectationsDefinedThenAsStringReturnsCanReturnTheResponseBody" duration-ms="240" started-at="2016-08-06T18:54:51Z" finished-at="2016-08-06T18:54:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- whenExpectationsDefinedThenAsStringReturnsCanReturnTheResponseBody -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.openLib.RestAssured.Assignment_Restassured@3e6fa38a]" name="tearDown" is-config="true" duration-ms="938" started-at="2016-08-06T18:54:52Z" finished-at="2016-08-06T18:54:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.openLib.RestAssured.Assignment_Restassured -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
