@@ -4,12 +4,13 @@ import static io.restassured.RestAssured.expect;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.equalTo;
-import static org.junit.Assert.assertThat;
+import static org.hamcrest.Matchers.lessThan;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
 import java.util.Properties;
 import java.util.UUID;
+import java.util.concurrent.TimeUnit;
 
 import javax.activation.DataHandler;
 import javax.activation.DataSource;
@@ -37,7 +38,7 @@ import reporter.JyperionListener;
 public class Assignment_Restassured {
 
     @DataProvider(name = "notes")
-    public String[][] createNotesData() {
+    public Object[][] createNotesData() {
         return new String[][]{{"type", "/type/text"},
                 {"value", "Poem. In Sanskrit and Oriya (Oriya in Devanagari script); frwd. in English."}};
     }
@@ -301,6 +302,16 @@ public class Assignment_Restassured {
     }
 
     @Test
+    public void checkResponseTime() {
+        given().
+                when().
+                get("http://openlibrary.org/authors/OL1A.json?callback=process").
+                then().
+                assertThat().
+                time(lessThan(500L),TimeUnit.MILLISECONDS);
+    }
+
+    @Test
     public void retrieveOAuthToken() {
         given().params("grant_type", "client_credentials").auth().preemptive().basic("joe", "secret").when()
                 .post("https://openlibrary.org/account/login").then().log().body();
@@ -312,7 +323,7 @@ public class Assignment_Restassured {
         // sendPDFReportByGMail("kalyanfn@gmail.com", "DietC0ke", "Haribabu_namduri@skillsoft.com", "Test Report: Restful API Tests with RestAssured for OpenLib", "");
     }
 
-    
+
 
     private static String randomEmail() {
         return "random-" + UUID.randomUUID().toString() + "@example.com";
@@ -352,7 +363,7 @@ public class Assignment_Restassured {
             multipart.addBodyPart(objMessageBodyPart);
             objMessageBodyPart = new MimeBodyPart();
             // Set path to the pdf report file
-            String filename = System.getProperty("user.dir") + "/Assignment_OpenLib.pdf";
+            String filename = System.getProperty("user.dir") + "/Test.pdf";
             // Create data source to attach the file in mail
             DataSource source = new FileDataSource(filename);
             objMessageBodyPart.setDataHandler(new DataHandler(source));
