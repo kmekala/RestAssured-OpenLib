@@ -107,6 +107,15 @@ To Execute the tests for RestAssured manually:
    
    ```
 
+To Execute existing SoapUI tests using TestNG runner
+ ``` 
+  
+  Use: OpenLibREST.java (generic runner class to run SoapUI projects using TestNG runner)
+  Maven cmd: mvn -f pom_soapui.xml -Dit.test=OpenLibREST.java -Dfilepath=”filepath” -DprojectPassword=”Password” -DtestSuite=”testSuite” verify
+  
+  ```
+
+
 To execute the tests from terminal: 
    
    ```
