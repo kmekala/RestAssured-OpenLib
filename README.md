@@ -46,9 +46,9 @@ Hamcrest matchers:
 Examples:
  
    ```
-      equalTo(X)      Does the object equal to x?
+      equalTo(X)      Is the object equal to x?
       hasItem(“X”)    Does the collection contain an item “X”
-      hasSize(3)      Does the size of the collection equal to 3?
+      hasSize(3)      Is the size of the collection equal to 3?
       not(equalto(X)) Inverts matcher equalTo()
   
 
