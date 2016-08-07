@@ -9,7 +9,12 @@
 
     <name>SkillSoftAssignment</name>
     <url>http://maven.apache.org</url>
-
+    <repositories>
+        <repository>
+            <id>smartbear-sweden-plugin-repository</id>
+            <url>http://www.soapui.org/repository/maven2/</url>
+        </repository>
+    </repositories>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
@@ -115,6 +120,41 @@
             <artifactId>apache-mime4j-core</artifactId>
             <version>0.7.2</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.smartbear.soapui</groupId>
+            <artifactId>soapui</artifactId>
+            <version>5.1.2</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.apache.httpcomponents</groupId>
+                    <artifactId>httpclient</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.apache.httpcomponents</groupId>
+                    <artifactId>httpmime</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.apache.httpcomponents</groupId>
+                    <artifactId>httpcore</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.apache.httpcomponents</groupId>
+                    <artifactId>org.apache.oltu.oauth2.httpclient4</artifactId>
+                </exclusion>
+                <!-- <exclusion> <groupId>commons-httpclient</groupId> <artifactId>commons-httpclient</artifactId>
+                   </exclusion> -->
+                <exclusion>
+                    <groupId>org.apache.httpcomponents</groupId>
+                    <artifactId>httpclient-cache</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.apache.httpcomponents</groupId>
+                    <artifactId>httpcore-nio</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
     </dependencies>
     
        <build>
