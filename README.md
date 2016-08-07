@@ -110,6 +110,6 @@ To Execute the tests for RestAssured manually:
 To execute the tests from terminal: 
    
    ```
- cd Project
- mvn clean test
+  cd to the project folder
+   mvn clean test
    ```
