@@ -110,5 +110,6 @@ To Execute the tests for RestAssured manually:
 To execute the tests from terminal: 
    
    ```
-   java -cp "PATH/TO/TESTNG.jar:PATH/TO/jcommander-1.48.jar" org.testng.TestNG testng.xml
+ cd Project
+ mvn clean test
    ```
