@@ -77,8 +77,8 @@ Validating Technical response data:
     
     HTTP status code
     MIME-type of received responses
-    Cookies and their value
-etc.
+    Cookies and their value...  etc.
+
     
 
 Our application under test:
