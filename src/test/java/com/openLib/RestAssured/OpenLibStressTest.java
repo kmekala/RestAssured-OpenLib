@@ -23,7 +23,7 @@ public class OpenLibStressTest {
     static final int wait = 60 * 1000;
     int iterations = 30;
     String post = "TEST";
-    String expect = "HANG-TEST";
+    String expect = "{\"name\": \"Sachi Rautroy\", \"personal_name\": \"Sachi Rautroy\", \"death_date\": \"2004\", \"last_modified\": {\"type\": \"/type/datetime\", \"value\": \"2008-11-16T07:25:54.131674\"}, \"key\": \"/authors/OL1A\", \"birth_date\": \"1916\", \"type\": {\"key\": \"/type/author\"}, \"id\": 97, \"revision\": 6}";
     String url = null;
 
     @Before
