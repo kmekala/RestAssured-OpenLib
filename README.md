@@ -122,3 +122,18 @@ To execute the tests from terminal:
   cd to the project folder
    mvn clean test
    ```
+
+Report
+
+```
+Add your email in @AfterSuite in "Assignment_Restassured.java"
+located here src/test/java/com/openLib/RestAssured/Assignment_Restassured.java, an pdf report will be emailed to you after the tests are executed.
+
+```
+
+Local reports
+
+```
+Standard HTML Report
+A report will be generated at /target/surefire-reports/Suite/Test.html
+```
