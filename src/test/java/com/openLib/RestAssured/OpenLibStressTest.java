@@ -50,30 +50,6 @@ public class OpenLibStressTest {
     }
 
     @Test(timeout = wait)
-    public void stressWithRestAssuredPost() throws UnsupportedEncodingException {
-        for (int i = 0, n = iterations; i < n; i++) {
-            given().contentType("text/plain;charset=utf-8").body(post.getBytes("UTF-8")).
-                    expect().body(equalTo(expect)).
-                    when().post(url);
-        }
-    }
-
-    @Test(timeout = wait)
-    public void stressWithRestAssuredPostWhenSameHttpClientInstanceIsReused() throws UnsupportedEncodingException {
-        RestAssured.config = RestAssuredConfig.newConfig().httpClient(HttpClientConfig.httpClientConfig().reuseHttpClientInstance());
-
-        try {
-            for (int i = 0, n = iterations; i < n; i++) {
-                given().contentType("text/plain;charset=utf-8").body(post.getBytes("UTF-8")).
-                        expect().body(equalTo(expect)).
-                        when().post(url);
-            }
-        } finally {
-            RestAssured.reset();
-        }
-    }
-
-    @Test(timeout = wait)
     public void stressWithRestAssuredGetManualClose() throws IOException, InterruptedException {
         RestAssured.config = RestAssuredConfig.newConfig().httpClient(HttpClientConfig.httpClientConfig().reuseHttpClientInstance());
 
