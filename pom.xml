@@ -9,17 +9,29 @@
 
     <name>SkillSoftAssignment</name>
     <url>http://maven.apache.org</url>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <restlet.version>2.0.14</restlet.version>
+    </properties>
     <repositories>
         <repository>
             <id>smartbear-sweden-plugin-repository</id>
             <url>http://www.soapui.org/repository/maven2/</url>
         </repository>
+        <repository>
+            <id>maven-restlet</id>
+            <name>Public online Restlet repository</name>
+            <url>http://maven.restlet.org</url>
+        </repository>
     </repositories>
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
+
 
     <dependencies>
+        <dependency>
+            <groupId>org.restlet.jee</groupId>
+            <artifactId>org.restlet</artifactId>
+            <version>${restlet.version}</version>
+        </dependency>
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
