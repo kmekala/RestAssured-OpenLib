@@ -3,7 +3,7 @@
 
 
 ## Tutorials
-*https://github.com/deadlyicon/hobson
+* https://github.com/deadlyicon/hobson
 * https://github.com/thoughtbot/trail-map
 * http://tutorials.jumpstartlab.com/
 * http://ruby.learncodethehardway.org/
