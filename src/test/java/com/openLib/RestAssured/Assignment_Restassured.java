@@ -320,7 +320,6 @@ public class Assignment_Restassured {
     @AfterSuite
     public void tearDown() {
         sendPDFReportByGMail("kalyanfn@gmail.com", "DietC0ke", "kalyanfn@gmail.com","Test Report: Restful API Tests with RestAssured for OpenLib", "");
-        sendPDFReportByGMail("kalyanfn@gmail.com", "DietC0ke", "Haribabu_namduri@skillsoft.com", "Test Report: Restful API Tests with RestAssured for OpenLib", "");
     }
 
 
