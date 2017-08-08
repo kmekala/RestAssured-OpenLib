@@ -4,7 +4,7 @@
   <test name="Test">
     <classes>
       <class name="com.openLib.RestAssured.Assignment_Restassured"/>
-      <class name="com.openLib.RestAssured.OpenLibREST"/>
+      <class name="com.openLib.RestAssured.OpenLibStressTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
