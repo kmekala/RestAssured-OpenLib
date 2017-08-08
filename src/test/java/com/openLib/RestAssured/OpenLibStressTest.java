@@ -1,15 +1,14 @@
 package com.openLib.RestAssured;
 
-import static org.testng.AssertJUnit.assertEquals;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.Test;
-import org.testng.annotations.BeforeMethod;
 import io.restassured.RestAssured;
 import io.restassured.config.ConnectionConfig;
 import io.restassured.config.HttpClientConfig;
 import io.restassured.config.RestAssuredConfig;
 import org.apache.commons.io.IOUtils;
 import org.restlet.Component;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
@@ -17,13 +16,14 @@ import java.io.UnsupportedEncodingException;
 import static io.restassured.RestAssured.get;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
+import static org.testng.AssertJUnit.assertEquals;
 
 public class OpenLibStressTest {
     Component component;
     static final int wait = 60 * 1000;
     int iterations = 30;
     String post = "TEST";
-    String expect = "{\"name\": \"Sachi Rautroy\", \"personal_name\": \"Sachi Rautroy\", \"death_date\": \"2004\", \"last_modified\": {\"type\": \"/type/datetime\", \"value\": \"2008-11-16T07:25:54.131674\"}, \"key\": \"/authors/OL1A\", \"birth_date\": \"1916\", \"type\": {\"key\": \"/type/author\"}, \"id\": 97, \"revision\": 6}";
+    String expect = "{\"name\": \"Sachi Rautroy\", \"created\": {\"type\": \"/type/datetime\", \"value\": \"2008-04-01T03:28:50.625462\"}, \"death_date\": \"2004\", \"alternate_names\": [\"Satchidananda Raut Roy\", \"Satchidananda Raut-Roy\", \"Satchidananda Rautroy\", \"Satchi Raut Roy\", \"Satchi Raut-Roy\", \"Satchi Rautroy\", \"Saccida\\u0304nanda Ra\\u0304utara\\u0304y\\u0307a\", \"Yugashrashta Sachi Routray\", \"Sacci R\\u0101utar\\u0101\\u1e8fa\"], \"last_modified\": {\"type\": \"/type/datetime\", \"value\": \"2016-11-09T22:25:45.881010\"}, \"latest_revision\": 8, \"key\": \"/authors/OL1A\", \"birth_date\": \"1916\", \"personal_name\": \"Sachi Rautroy\", \"type\": {\"key\": \"/type/author\"}, \"revision\": 8}";
     String url = null;
 
     @BeforeMethod
